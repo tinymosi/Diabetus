@@ -1,0 +1,16 @@
+.card {
+    margin-bottom: 10px;
+}
+
+small {
+    color: #a0a0a0;
+    size: -1;
+}
+
+footer {
+    text-align: center;
+    background: #303030;
+    color: #a0a0a0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
