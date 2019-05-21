@@ -11,10 +11,11 @@
     <!-- Override original bootstrap with Link to online themed bootstrap v4.3.1-->
     <link href="https://sloniq.space/Assets/themed-bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- Local themed bootstrap file -->
-    <!-- <link rel="stylesheet" href="bootstrap1.css"> -->
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
     <style>
         .card {
             margin-bottom: 10px;
+            margin-top: 10px;
         }
 
         small {
@@ -40,7 +41,11 @@
 
         p {
             margin: 7px;
-            
+        }
+
+        .jumbotron {
+            padding-bottom: 13px;
+            margin-bottom: 15px;
         }
     </style>
     <title>Diabetus</title>
@@ -48,9 +53,11 @@
 
 <body>
     <div class="container">
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <a class="navbar-brand" style="color:#eafbff"><b>May 2019 - Diabetus</b></a>
         </nav>
+
         <div class="jumbotron">
             <!-- <h1 class="display-4">May 2019</h1> -->
             <hr class="my-4">
@@ -59,9 +66,14 @@
             </p>
         </div>
 
-        <div class="card">
+        <div class=" text-center" style="padding-bottom: 5px;">
+            <a href="javascript:;" class="btn btn-secondary btn-block" id="scrollToBottom">Scroll to Bottom ⬇️</a>
+        </div>
+
+
+        <div class=" card">
             <div class="card-body">
-                <h5 class="card-title">- May 1 -</h5>
+                <h5 class="card-title">May 1</h5>
                 <p class="card-text">
                     <small>11:29 • </small>
                     6.4 mg/DL - before meal
@@ -79,7 +91,7 @@
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">- May 2 -</h5>
+                <h5 class="card-title">May 2</h5>
                 <p class="card-text">
                     <small>11:29 • </small>
                     6.4 ммоль/л - до еды
@@ -88,17 +100,17 @@
                     <small>11:30 • </small>
                     5 единиц инсулина
                 </p>
-                <hr />
                 <p class="card-text">
                     <small>13:40 • </small>
                     8.1 ммоль/л - после еды
                 </p>
+                <hr />
             </div>
         </div>
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">- May 3 -</h5>
+                <h5 class="card-title">May 3</h5>
                 <p class="card-text">
                     <small>11:29 • </small>
                     6.4 mg/DL
@@ -110,7 +122,30 @@
             </div>
         </div>
 
-        <div class="text-center" style="padding-bottom: 25px; padding-top: 15px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatum, quos possimus labore
+            necessitatibus consequatur ipsum reprehenderit blanditiis non! Quae culpa porro repudiandae veritatis
+            perspiciatis excepturi recusandae placeat, natus quo, ipsum repellendus qui quas ipsa non ipsam sed itaque
+            odit, perferendis modi in? Cupiditate ducimus architecto porro assumenda facere officia perferendis harum
+            nam, nihil rerum et, quae amet esse ab, mollitia voluptatem facilis voluptates velit ex doloremque sapiente.
+            Quo fugiat dolorem pariatur quibusdam recusandae ea nulla sint provident quas cumque, harum reprehenderit
+            nihil, fugit cum quidem incidunt autem magni dolore consequuntur molestias, eius nesciunt aut in
+            consequatur? Aut sit architecto cum consequuntur ullam nobis quod laudantium? Repellendus ex odio,
+            voluptatibus alias expedita cupiditate asperiores necessitatibus earum recusandae quia natus! Eos corporis
+            modi totam iste suscipit ad obcaecati, a sapiente asperiores placeat voluptatum eius commodi ducimus enim
+            molestias aliquid et amet porro voluptatem blanditiis alias consequatur cum neque voluptatibus? Voluptas
+            quod, culpa eum dolorem fugit id ipsa quibusdam, exercitationem dolore mollitia dolorum magni eius dolor
+            repellat itaque, ipsum cumque tempora alias delectus. Explicabo at officia repellendus corrupti veritatis
+            omnis neque, obcaecati hic pariatur deserunt quidem autem debitis nam maxime laboriosam sit tempora facere,
+            officiis molestias aspernatur corporis delectus! Consequatur, animi ipsa quia eius sapiente, impedit libero
+            itaque, numquam necessitatibus autem odit ipsum culpa. Incidunt blanditiis et cupiditate eos eum earum
+            architecto ratione ad veritatis, odio assumenda delectus. Nobis laboriosam quod neque assumenda excepturi
+            facere nemo? Obcaecati neque, sequi, quos dolores veritatis libero dicta provident quas, recusandae
+            repellendus magni odit asperiores aspernatur omnis et eveniet voluptatum vel ex! Illo aperiam reiciendis
+            quos magnam consequatur labore tenetur aspernatur atque explicabo, suscipit veritatis velit quasi maiores
+            perferendis numquam asperiores error quae in expedita amet harum. Dolorum, ad tempore accusamus quasi
+            libero, velit tenetur possimus, quis vitae minus fuga? Praesentium cumque rerum ullam eum voluptas.
+        </p>
+        <div class=" text-center" style="padding-bottom: 15px; padding-top: 5px">
             <a href="shortcuts://x-callback-url/run-shortcut?name*=" class="btn btn-dark" role="button">Back to
                 Shortcut</a>
         </div>
@@ -122,15 +157,67 @@
         </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#scrollToBottom').bind("click", function () {
+                $('html, body').animate({ scrollTop: $(document).height() }, 500);
+                return false;
+            });
+        });
+    </script>
+    <!-- <script>
+        $(function () {
+            var lastScrollTop = 0;
+            var $navbar = $('.navbar');
+            var navbarHeight = $navbar.outerHeight();
+            var movement = 0;
+            var lastDirection = 0;
+
+            $(window).scroll(function (event) {
+                var st = $(this).scrollTop();
+                movement += st - lastScrollTop;
+
+                if (st > lastScrollTop) { // scroll down
+                    if (lastDirection != 1) {
+                        movement = 0;
+                    }
+                    var margin = Math.abs(movement);
+                    if (margin > navbarHeight) {
+                        margin = navbarHeight;
+                    }
+                    margin = -margin;
+                    $navbar.css('margin-top', margin + "px")
+
+                    lastDirection = 1;
+                } else { // scroll up
+                    if (lastDirection != -1) {
+                        movement = 0;
+                    }
+                    var margin = Math.abs(movement);
+                    if (margin > navbarHeight) {
+                        margin = navbarHeight;
+                    }
+                    margin = margin - navbarHeight;
+                    $navbar.css('margin-top', margin + "px")
+
+                    lastDirection = -1;
+                }
+
+                lastScrollTop = st;
+                // console.log(margin);
+            });
+        });
+    </script> -->
+    <script src="HideNavbar.js"></script>
 </body>
 
 </html>
