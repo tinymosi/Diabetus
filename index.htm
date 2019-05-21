@@ -23,12 +23,40 @@
             size: -1;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            position: relative;
+        }
+
+        .container {
+            min-height: 100vh;
+            /* will cover the 100% of viewport */
+            overflow: hidden;
+            display: block;
+            position: relative;
+            padding-bottom: 37px;
+            /* height of your footer */
+        }
+
         footer {
             text-align: center;
             background: #303030;
             color: #a0a0a0;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 27px;
         }
 
         hr {
@@ -60,7 +88,8 @@
 
         <div class="jumbotron">
             <!-- <h1 class="display-4">May 2019</h1> -->
-            <hr class="my-4">
+            <br />
+            <br />
             <p class="lead">
                 <h2>Your month log journal</h2>
             </p>
@@ -122,40 +151,18 @@
             </div>
         </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatum, quos possimus labore
-            necessitatibus consequatur ipsum reprehenderit blanditiis non! Quae culpa porro repudiandae veritatis
-            perspiciatis excepturi recusandae placeat, natus quo, ipsum repellendus qui quas ipsa non ipsam sed itaque
-            odit, perferendis modi in? Cupiditate ducimus architecto porro assumenda facere officia perferendis harum
-            nam, nihil rerum et, quae amet esse ab, mollitia voluptatem facilis voluptates velit ex doloremque sapiente.
-            Quo fugiat dolorem pariatur quibusdam recusandae ea nulla sint provident quas cumque, harum reprehenderit
-            nihil, fugit cum quidem incidunt autem magni dolore consequuntur molestias, eius nesciunt aut in
-            consequatur? Aut sit architecto cum consequuntur ullam nobis quod laudantium? Repellendus ex odio,
-            voluptatibus alias expedita cupiditate asperiores necessitatibus earum recusandae quia natus! Eos corporis
-            modi totam iste suscipit ad obcaecati, a sapiente asperiores placeat voluptatum eius commodi ducimus enim
-            molestias aliquid et amet porro voluptatem blanditiis alias consequatur cum neque voluptatibus? Voluptas
-            quod, culpa eum dolorem fugit id ipsa quibusdam, exercitationem dolore mollitia dolorum magni eius dolor
-            repellat itaque, ipsum cumque tempora alias delectus. Explicabo at officia repellendus corrupti veritatis
-            omnis neque, obcaecati hic pariatur deserunt quidem autem debitis nam maxime laboriosam sit tempora facere,
-            officiis molestias aspernatur corporis delectus! Consequatur, animi ipsa quia eius sapiente, impedit libero
-            itaque, numquam necessitatibus autem odit ipsum culpa. Incidunt blanditiis et cupiditate eos eum earum
-            architecto ratione ad veritatis, odio assumenda delectus. Nobis laboriosam quod neque assumenda excepturi
-            facere nemo? Obcaecati neque, sequi, quos dolores veritatis libero dicta provident quas, recusandae
-            repellendus magni odit asperiores aspernatur omnis et eveniet voluptatum vel ex! Illo aperiam reiciendis
-            quos magnam consequatur labore tenetur aspernatur atque explicabo, suscipit veritatis velit quasi maiores
-            perferendis numquam asperiores error quae in expedita amet harum. Dolorum, ad tempore accusamus quasi
-            libero, velit tenetur possimus, quis vitae minus fuga? Praesentium cumque rerum ullam eum voluptas.
-        </p>
-        <div class=" text-center" style="padding-bottom: 15px; padding-top: 5px">
+        <div class=" text-center" style="padding-bottom: 5px; padding-top: 5px">
             <a href="shortcuts://x-callback-url/run-shortcut?name*=" class="btn btn-dark" role="button">Back to
                 Shortcut</a>
         </div>
-    </div>
 
-    <div>
+
+
         <footer>
             Generated with ❤️ by Diabetus
         </footer>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -174,7 +181,7 @@
             });
         });
     </script>
-    <!-- <script>
+    <script>
         $(function () {
             var lastScrollTop = 0;
             var $navbar = $('.navbar');
@@ -216,8 +223,7 @@
                 // console.log(margin);
             });
         });
-    </script> -->
-    <script src="HideNavbar.js"></script>
+    </script>
 </body>
 
 </html>
